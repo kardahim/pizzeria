@@ -78,6 +78,11 @@ header .hamburger {
     align-items: center;
 }
 
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .news {
     margin-top: 15px;
 }
@@ -94,10 +99,6 @@ header .hamburger {
     max-width: 540px;
     max-height: 320px;
     margin-right: 7.5px;
-}
-.slideshow img {
-    width: 100%;
-    height: auto;
 }
 
 .text {
@@ -126,10 +127,6 @@ header .hamburger {
     display: none;
 }
 
-.mySlides img {
-    border-radius: 10px;
-}
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -144,10 +141,6 @@ header .hamburger {
     max-width: 540px;
     max-height: 320px;
     text-align: center;
-}
-
-.find img {
-    border-radius: 10px;
 }
 
 .search {
@@ -238,9 +231,6 @@ span {
     margin-left: 7.5px;
 }
 
-.food img {
-    border-radius: 10px;
-}
 .food .text {
     bottom: 60%;
     right: 15%;
@@ -248,6 +238,30 @@ span {
 .food .subtext {
     bottom: 50%;
     right: 16.5%;
+}
+
+.menu {
+    position: relative;
+    max-height: 180px;
+    max-width: 540px;
+}
+
+.menu:first-of-type {
+    margin-right: 7.5px;
+}
+
+.menu:last-of-type {
+    margin-left: 7.5px;
+}
+
+.menu .text {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* MAIN CONTENT END */
@@ -293,7 +307,7 @@ span {
         margin-bottom: 0;
     }
     
-    .slideshow, .find, .food {
+    .slideshow, .find, .food, .menu:last-of-type, .menu:first-of-type {
         margin-right: auto;
         margin-left: auto;
     }
