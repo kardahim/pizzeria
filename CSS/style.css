@@ -224,6 +224,32 @@ span {
     margin-right: 15px;
 }
 
+.food {
+    position: relative;
+    max-width: 354px;
+    max-height: 350px;
+}
+
+.f1, .f2 {
+    margin-right: 7.5px;
+}
+
+.f2, .f3 {
+    margin-left: 7.5px;
+}
+
+.food img {
+    border-radius: 10px;
+}
+.food .text {
+    bottom: 60%;
+    right: 15%;
+}
+.food .subtext {
+    bottom: 50%;
+    right: 16.5%;
+}
+
 /* MAIN CONTENT END */
 
 /* RWD START */
@@ -250,22 +276,39 @@ span {
     /* MENU BAR END */
 }
 
+
+@media screen and (max-width: 768px) and (min-width: 669px){
+    .text, .search p, .span {
+        font-size: 25px;
+    }
+
+    .subtext {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 668px){
     .row {
         flex-direction: column;
+        margin-bottom: 0;
     }
     
-    .slideshow, .find {
+    .slideshow, .find, .food {
         margin-right: auto;
         margin-left: auto;
     }
 
     .search {
         margin-bottom: 0;
+        margin-top: 4px;
     }
 
     .order {
         margin-top: 0;
+    }
+    
+    .food {
+        margin-bottom: 4px;
     }
 }
 
