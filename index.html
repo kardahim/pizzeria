@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="JS/functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
+        <!--LOGO-->
         <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
         <i class="fas fa-bars hamburger"></i>
+        <!--NAV-->
         <nav>
             <ul>
                 <li><a href="#">MENU</a></li>
@@ -25,11 +28,62 @@
                 <li><a href="#">ZAMÓW ONLINE</a></li>
             </ul>
         </nav>
+        <!--CART-->
         <div class="cart">
             <img src="IMG/cart.png" alt="ikona wózka">
             <a href="#">Wózek</a>
         </div>
     </header>
+    <div class="container">
+        <!--NEWS ICON-->
+        <div class="news">
+            <img src="IMG/nowosci.png" alt="nowosci">
+        </div>
+        <!--FIRST ROW-->
+        <div class="row">
+            <!--SLIDESHOW-->
+            <div class="slideshow">
+                <div class="mySlides fade">
+                    <img src="IMG/new.png" style="width:100%" alt="slajd 1">
+                    <div class="text">KURCZAK</div>
+                    <div class="subtext">NOWOŚĆ</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="IMG/new2.png" style="width:100%" alt="slajd 2">
+                    <div class="text">SZYNKA</div>
+                    <div class="subtext">NOWOŚĆ</div>
+                </div>
+            </div>
+            <div class="find">
+                <!--SEARCH-->
+                <div class="search">
+                    <p>ZNAJDŹ</p>
+                    <div class="search-input">
+                        <img src="IMG/find.png" alt="szukaj" style="width: 100%;">
+                        <input type="search" placeholder="Szukaj">
+                        <button>Szukaj</button>
+                    </div>
+                </div>
+                <!--ORDER-->
+                <div class="order">
+                    <a href="#">
+                        <img src="IMG/order.png" alt="szukaj" style="width: 100%;">
+                        <div class="span">
+                            <span style="color: #F9A609;">ZAMÓW</span>
+                            <span style="color: white;">TERAZ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--SECOND ROW-->
+        <div class="row"></div>
+        <!--THIRD ROW-->
+        <div class="row"></div>
+    </div>
+    <!--SLIDESHOW SCRIPT-->
+    <script src="JS/slideshow.js"></script>
 </body>
 
 </html>

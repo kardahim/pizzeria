@@ -5,6 +5,7 @@ body {
     background-image: url(../IMG/bg2.png);
     background-attachment: fixed;
     background-size: cover;
+    color: white;
 }
 
 * {
@@ -32,7 +33,6 @@ header {
     align-items: center;
     font-weight: bold;
     font-size: 20px;
-    
 }
 
 header a {
@@ -57,7 +57,7 @@ nav ul li a {
     font-size: 17px;
 }
 
-.logo {
+.logo {                                    
     margin-left: 10%;
 }
 
@@ -71,8 +71,164 @@ header .hamburger {
 }
 /* MENU BAR END */
 
+/* MAIN CONTENT START */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news {
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 540px;
+    max-height: 320px;
+    margin-right: 7.5px;
+}
+.slideshow img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50%;
+    right: 25%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.subtext {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40%;
+    right: 26.5%;
+    width: 100%;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 10px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.find {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 7.5px;
+    max-width: 540px;
+    max-height: 320px;
+    text-align: center;
+}
+
+.find img {
+    border-radius: 10px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    margin-bottom: 7.5px;
+}
+
+.search p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: auto;
+}
+
+.search .search-input input {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 50%;
+}
+.search .search-input button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 26px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 25%;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+.search .search-input button:hover {
+    background: #EEEEEE;
+}
+
+.order {
+    position: relative;
+    display: flex;
+    margin-top: 7.5px;
+}
+
+.order .span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+span {
+    margin-right: 15px;
+}
+
+/* MAIN CONTENT END */
+
 /* RWD START */
 @media screen and (max-width: 900px){
+    /* MENU BAR START */
     nav ul li a {
         padding: 0px 20px;
         text-align: center;
@@ -91,9 +247,30 @@ header .hamburger {
     .logo {
         margin-left: 10px;
     }
+    /* MENU BAR END */
+}
+
+@media screen and (max-width: 668px){
+    .row {
+        flex-direction: column;
+    }
+    
+    .slideshow, .find {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .search {
+        margin-bottom: 0;
+    }
+
+    .order {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 580px){
+    /* MENU BAR START */
     nav {
         position: absolute;
         width: 100%;
@@ -125,5 +302,24 @@ header .hamburger {
     nav li {
         border-top: 1px solid white;
     }
+    /* MENU BAR END */
+    
+    /* MAIN CONTENT START */
+    .news img {
+        max-width: 300px;
+    }
+    /* MAIN CONTENT END */
 }
-/* RWD END  */
+/* RWD END */
+
+/* WEBKIT START*/
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+/* WEBKIT END*/
