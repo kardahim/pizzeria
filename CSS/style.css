@@ -349,6 +349,7 @@ footer {
     .flink-container {
         flex-direction: column;
         border: none;
+        height: auto;
     }
     
     .flink a {
@@ -359,7 +360,7 @@ footer {
         margin-bottom: 5px;
     }
     .copy {
-        margin-top: 10%;
+        height: auto;
     }
     
     footer {
@@ -367,16 +368,9 @@ footer {
     }
 
     .media img {
-        margin-right: 0;
-        margin-left: 50px;
-    }
-    
-    .m1 img{
-        margin-right: 30px;
-    }
-    
-    .m2 img {
-        margin-right: 15px;
+        height: 25px;
+        margin-right: 10vw;
+        margin-left: 10vw;
     }
 }
 
