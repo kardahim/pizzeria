@@ -244,6 +244,7 @@ span {
     position: relative;
     max-height: 180px;
     max-width: 540px;
+    cursor: pointer;
 }
 
 .menu:first-of-type {
@@ -381,6 +382,7 @@ footer {
 .cartSummary {
     margin-left: 7.5px;
     margin-right: 30px;
+    
 }
 
 /* CART END */

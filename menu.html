@@ -14,7 +14,7 @@
     <script src="JS/changeMenu.js"></script>
 </head>
 
-<body>
+<body onload="changeMenu()">
     <header>
         <!--LOGO-->
         <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
@@ -23,7 +23,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">GŁÓWNA</a></li>
-                <li><a href="menu.html">MENU</a></li>
+                <li><a href="menu.html" onclick="changeID(2);">MENU</a></li>
                 <li><a href="#">ZAMÓW ONLINE</a></li>
             </ul>
         </nav>
@@ -40,11 +40,11 @@
         </div>
         <!--FIRST ROW-->
         <div class="row">
-            <div class="menu" onclick="changeMenu(1);">
+            <div class="menu" onclick="changeID(1);">
                 <img src="IMG/flavor.png" alt="orientalne">
                 <div class="text">SEZONOWE</div>
             </div>
-            <div class="menu" onclick="changeMenu(2);">
+            <div class="menu" onclick="changeID(2);">
                 <img src="IMG/breakfast.png" alt="śniadaniowe">
                 <div class="text">KLASYCZNE</div>
             </div>
@@ -53,127 +53,7 @@
         <div class="row">
             <div class="menuOrder">
                 <section id="menuSPA">
-                    <h1>Menu klasyczne</h1>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>WŁASNA</span>
-                            <div class="price">
-                                <span>20 cm&nbsp;&nbsp;</span>
-                                <span>27 cm&nbsp;&nbsp;</span>
-                                <span>40 cm&nbsp;&nbsp;</span>
-                                <span>60 cm&nbsp;&nbsp;</span>
-                                <button>Stwórz</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Do 5 składników</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>1.VERONA</span>
-                            <div class="price">
-                                <span>9,50 zł</span>
-                                <span>16,00 zł</span>
-                                <span>25,90 zł</span>
-                                <span>45,50 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Ser, Szynka</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>2. OSTRA KURA&#128293;</span>
-                            <div class="price">
-                                <span>12,50 zł</span>
-                                <span>20,90 zł</span>
-                                <span>31,90 zł</span>
-                                <span>62,00 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Kurczak, Cebula, Jalapeno, Ser, Boczek</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>3.AMORE</span>
-                            <div class="price">
-                                <span>12,00 zł</span>
-                                <span>18,00 zł</span>
-                                <span>29,90 zł</span>
-                                <span>59,80 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Ser, Kurczak z warzywami</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>4.FETA&#127807;</span>
-                            <div class="price">
-                                <span>11,50 zł</span>
-                                <span>18,10 zł</span>
-                                <span>32,50 zł</span>
-                                <span>62,40 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Cebula, Pomidor, Brokuły, Feta</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>5.VENEZIA</span>
-                            <div class="price">
-                                <span>10,00 zł</span>
-                                <span>17,50 zł</span>
-                                <span>31,50 zł</span>
-                                <span>57,50 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Ser, Salami</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>6.CHORIZO&#128293;</span>
-                            <div class="price">
-                                <span>11,50 zł</span>
-                                <span>18,70 zł</span>
-                                <span>33,60 zł</span>
-                                <span>59,50 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Chorizo, Oliwki czarne, Jalapeno, Ser</span>
-                        </div>
-                    </div>
-                    <div class="menuRow">
-                        <div class="pizzaNameRow">
-                            <span>7.HAWAJSKA</span>
-                            <div class="price">
-                                <span>9,50 zł</span>
-                                <span>16,50 zł</span>
-                                <span>29,10 zł</span>
-                                <span>58,20 zł</span>
-                                <button>Do koszyka</button>
-                            </div>
-                        </div>
-                        <div class="ingredients">
-                            <span>Ser, Ananas, Kurczak</span>
-                        </div>
-                    </div>
+                    <h1>Jak to widzisz skontaktuj się z administratorem user@gmail.com</h1>
                 </section>
                 <section>
                     <h1>Napoje</h1>

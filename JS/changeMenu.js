@@ -1,6 +1,11 @@
-function changeMenu(id) {
-    var text = "";
+function changeID(id) {
+    sessionStorage.setItem("menu_id", id);
+    location.href = "menu.html";
+}
 
+function changeMenu() {
+    var text = "";
+    var id = parseInt(sessionStorage.getItem("menu_id"));
     switch (id) {
         case 1: {
             text += showSpecial();

@@ -11,6 +11,7 @@
     <title>Pizza u Romana</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="JS/changeMenu.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">GŁÓWNA</a></li>
-                <li><a href="menu.html">MENU</a></li>
+                <li><a href="menu.html" onclick="changeID(2)">MENU</a></li>
                 <li><a href="#">ZAMÓW ONLINE</a></li>
             </ul>
         </nav>
@@ -95,11 +96,11 @@
         </div>
         <!--THIRD ROW-->
         <div class="row">
-            <div class="menu">
+            <div class="menu" onclick="changeID(1)">
                 <img src="IMG/flavor.png" alt="orientalne">
                 <div class="text">SEZONOWE</div>
             </div>
-            <div class="menu">
+            <div class="menu" onclick="changeID(2)">
                 <img src="IMG/breakfast.png" alt="śniadaniowe">
                 <div class="text">KLASYCZNE</div>
             </div>
@@ -117,13 +118,13 @@
                 <a href="#">ZESPÓŁ</a>
             </div>
             <div class="media">
-                <a href="#" class="m1">
+                <a href="#">
                     <img src="IMG/facebook.png" alt="facebook">
                 </a>
-                <a href="#" class="m2">
+                <a href="#">
                     <img src="IMG/twitter.png" alt="twitter">
                 </a>
-                <a href="#" class="m3">
+                <a href="#">
                     <img src="IMG/youtube.png" alt="youtube">
                 </a>
             </div>
