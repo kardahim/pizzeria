@@ -11,7 +11,7 @@ function changeMenu() {
             text += showSpecial();
             break;
         }
-        case 2: {
+        default: {
             text += showClassic();
             break;
         }
@@ -46,7 +46,15 @@ function showClassic() {
         '<span>16,00 zł</span>' +
         '<span>25,90 zł</span>' +
         '<span>45,50 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -61,7 +69,15 @@ function showClassic() {
         '<span>20,90 zł</span>' +
         '<span>31,90 zł</span>' +
         '<span>62,00 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -76,7 +92,15 @@ function showClassic() {
         '<span>18,00 zł</span>' +
         '<span>29,90 zł</span>' +
         '<span>59,80 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -91,7 +115,15 @@ function showClassic() {
         '<span>18,10 zł</span>' +
         '<span>32,50 zł</span>' +
         '<span>62,40 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -106,7 +138,15 @@ function showClassic() {
         '<span>17,50 zł</span>' +
         '<span>31,50 zł</span>' +
         '<span>57,50 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -121,7 +161,15 @@ function showClassic() {
         '<span>18,70 zł</span>' +
         '<span>33,60 zł</span>' +
         '<span>59,50 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -136,7 +184,15 @@ function showClassic() {
         '<span>16,50 zł</span>' +
         '<span>29,10 zł</span>' +
         '<span>58,20 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -173,7 +229,15 @@ function showSpecial() {
         '<span>17,50 zł</span>' +
         '<span>30,20 zł</span>' +
         '<span>59,50 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -188,7 +252,15 @@ function showSpecial() {
         '<span>20,90 zł</span>' +
         '<span>36,60 zł</span>' +
         '<span>69,90 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -203,7 +275,15 @@ function showSpecial() {
         '<span>17,00 zł</span>' +
         '<span>28,90 zł</span>' +
         '<span>55,80 zł</span>' +
+        '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
+        '<div>' +
+        '<button>20 cm</button>' +
+        '<button>27 cm</button>' +
+        '<button>40 cm</button>' +
+        '<button>60 cm</button>' +
+        '</div>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
