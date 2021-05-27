@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,11 @@
     <title>Pizza u Romana</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="JS/changeMenu.js"></script>
+    <script src="JS/cart.js"></script>
 </head>
 
-<body>
+<body onload="showAll()">
     <header>
         <!--LOGO-->
         <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
@@ -22,7 +24,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">GŁÓWNA</a></li>
-                <li><a href="menu.html">MENU</a></li>
+                <li><a href="menu.html" onclick="changeID(2)">MENU</a></li>
                 <li><a href="#">ZAMÓW ONLINE</a></li>
             </ul>
         </nav>
@@ -38,26 +40,12 @@
             <img src="IMG/nowosci.png" alt="nowosci">
         </div>
         <div class="menuOrder cartFlex">
-            <div class="cartList">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in rem quae! Facilis doloribus quis
-                iste, error temporibus repudiandae sequi unde, nesciunt a dolore cupiditate in odio minus nulla minima.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quisquam tenetur, labore ipsam, corrupti
-                esse doloribus iure suscipit, vel temporibus saepe excepturi voluptate error minus nemo quaerat sunt
-                nisi similique.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae, ipsum veniam vel sequi est
-                quae necessitatibus inventore excepturi corrupti a neque, rem quasi, fuga eum esse. Facere, est commodi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur fuga reiciendis ullam
-                asperiores magni beatae earum non cumque est officia, sapiente fugit accusamus. Fuga asperiores harum
-                porro quas amet!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nam voluptates recusandae repudiandae
-                corporis voluptatum rem minus quia cupiditate suscipit itaque laborum soluta facilis ducimus, commodi
-                vel ex vitae? Voluptates?
+            <div class="cartList" id="storage">
             </div>
             <div class="cartSummary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et voluptate quisquam mollitia
-                blanditiis ipsam tenetur eveniet! Ipsa reiciendis, nesciunt esse deserunt quibusdam illum fuga ex enim?
-                Iste, facilis quae.
-
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti vel sapiente architecto
+                dolores cum eum accusamus doloribus iure. Dolor voluptate necessitatibus sint explicabo, sunt
+                praesentium placeat expedita excepturi. Cumque!
             </div>
         </div>
     </div>
@@ -83,9 +71,8 @@
                 </a>
             </div>
         </div>
-        <div class="copy">Copyright 2020 P.Ciszewski</div>
+        <div class="copy">Copyright 2021 P.Ciszewski</div>
     </footer>
-    <!--SLIDESHOW SCRIPT-->
 </body>
 
 </html>

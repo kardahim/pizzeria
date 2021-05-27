@@ -1,0 +1,170 @@
+[
+    {
+        "id": "1",
+        "name": "Verona",
+        "size": "20 cm",
+        "price": "9.50"
+    },
+    {
+        "id": "2",
+        "name": "Verona",
+        "size": "27 cm",
+        "price": "16.00"
+    },
+    {
+        "id": "3",
+        "name": "Verona",
+        "size": "40 cm",
+        "price": "25.90"
+    },
+    {
+        "id": "4",
+        "name": "Verona",
+        "size": "60 cm",
+        "price": "45.40"
+    },
+    {
+        "id": "5",
+        "name": "Ostra Kura",
+        "size": "20 cm",
+        "price": "12.50"
+    },
+    {
+        "id": "6",
+        "name": "Ostra Kura",
+        "size": "27 cm",
+        "price": "20.90"
+    },
+    {
+        "id": "7",
+        "name": "Ostra Kura",
+        "size": "40 cm",
+        "price": "31.90"
+    },
+    {
+        "id": "8",
+        "name": "Ostra Kura",
+        "size": "60 cm",
+        "price": "62.00"
+    },
+    {
+        "id": "9",
+        "name": "Amore",
+        "size": "20 cm",
+        "price": "12.00"
+    },
+    {
+        "id": "10",
+        "name": "Amore",
+        "size": "27 cm",
+        "price": "18.00"
+    },
+    {
+        "id": "11",
+        "name": "Amore",
+        "size": "40 cm",
+        "price": "29.90"
+    },
+    {
+        "id": "12",
+        "name": "Amore",
+        "size": "60 cm",
+        "price": "59.80"
+    },
+    {
+        "id": "13",
+        "name": "Feta",
+        "size": "20 cm",
+        "price": "11.50"
+    },
+    {
+        "id": "14",
+        "name": "Feta",
+        "size": "27 cm",
+        "price": "18.10"
+    },
+    {
+        "id": "15",
+        "name": "Feta",
+        "size": "40 cm",
+        "price": "32.50"
+    },
+    {
+        "id": "16",
+        "name": "Feta",
+        "size": "60 cm",
+        "price": "62.40"
+    },
+    {
+        "id": "17",
+        "name": "Venezia",
+        "size": "20 cm",
+        "price": "10.00"
+    },
+    {
+        "id": "18",
+        "name": "Venezia",
+        "size": "27 cm",
+        "price": "17.50"
+    },
+    {
+        "id": "19",
+        "name": "Venezia",
+        "size": "40 cm",
+        "price": "31.50"
+    },
+    {
+        "id": "20",
+        "name": "Venezia",
+        "size": "60 cm",
+        "price": "57.50"
+    },
+    {
+        "id": "21",
+        "name": "Chorizo",
+        "size": "20 cm",
+        "price": "11.50"
+    },
+    {
+        "id": "22",
+        "name": "Chorizo",
+        "size": "27 cm",
+        "price": "18.70"
+    },
+    {
+        "id": "23",
+        "name": "Chorizo",
+        "size": "40 cm",
+        "price": "33.60"
+    },
+    {
+        "id": "24",
+        "name": "Chorizo",
+        "size": "60 cm",
+        "price": "59.50"
+    },
+    {
+        "id": "25",
+        "name": "Hawajska",
+        "size": "20 cm",
+        "price": "9.50"
+    },
+    {
+        "id": "26",
+        "name": "Hawajska",
+        "size": "27 cm",
+        "price": "16.50"
+    },
+    {
+        "id": "27",
+        "name": "Hawajska",
+        "size": "40 cm",
+        "price": "29.10"
+    },
+    {
+        "id": "28",
+        "name": "Hawajska",
+        "size": "60 cm",
+        "price": "58.20"
+    }
+]
