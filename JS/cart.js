@@ -48,6 +48,8 @@ function showAll() {
         document.getElementById('cartFlex').style.flexDirection = "column";
         document.getElementById('storage').style.width = "100%";
         document.getElementById('summary').style.width = "100%";
+        document.getElementById('summary').style.marginLeft = "0px";
+        document.getElementById('summary').style.padding = "15px";
         text += '<div style="text-align: center; font-size: 30px; font-weight: bold; margin-bottom: 15px; margin-top: 15px;">Twój koszyk jest pusty przejdź do menu!</div>'
         textS += '<div class="row">' +
             '<div class="menu" onclick="changeID(1)">' +
