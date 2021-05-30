@@ -1,5 +1,6 @@
 /* BASIC START */
 body {
+    text-shadow: #121212 1px 1px;
     margin: 0px;
     padding: 0px;
     background-image: url(../IMG/bg2.png);
@@ -40,6 +41,10 @@ header a {
     width: 100%;
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 nav ul {
     display: flex;
 }
@@ -76,6 +81,7 @@ header .hamburger {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 .container img {
@@ -343,6 +349,10 @@ footer {
     margin-right: 30px;
 }
 
+.pizzaNameRow:hover ~ .ingredients, .pizzaNameRow:hover {
+    color: #F9A609;
+}
+
 .price {
     margin-top: auto;
     margin-bottom: auto;
@@ -353,6 +363,7 @@ footer {
     width: 100px;
     height: 30px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .ingredients {
@@ -382,18 +393,12 @@ footer {
 
 .cartSummary {
     margin-left: 7.5px;
-    margin-right: 30px;
     width: 20%;
-    
 }
 
 .dropButton {
     display: block;
     position: relative;
-}
-
-.price button {
-    cursor: pointer;
 }
 
 .dropButton div {
@@ -403,11 +408,11 @@ footer {
     display: none;
 }
 
-.dropButton:hover div {
+.dropButton button:focus ~ div, .dropButton div:hover {
     display: block;
 }
 
-.dropButton:hover > button {
+.dropButton:hover > button, .dropButton button:focus {
     border-bottom-left-radius: 0;    
     border-bottom-right-radius: 0;    
 }
@@ -416,6 +421,14 @@ footer {
     display: block;
     border-radius: 0px;   
     height: 33px;
+}
+
+.dropButton div button:hover, .drinks button:hover {
+    transition: background-color 1s;
+    background-color: #F9A609;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
 }
 
 table {
@@ -439,6 +452,10 @@ table td:nth-child(even) {
     background-color: #ea272d;
 }
 
+table td:nth-child(odd) {
+    background-color: #333333;
+}
+
 table thead {
     background-color: #ea272d;
     border-bottom: 4px solid #333333;
@@ -458,12 +475,43 @@ table thead th:first-child {
     border-left: none;
 }
 table button {
+    display: inline-block;
     width: 50%;
+    height: 60px;
+    vertical-align: middle;
+}
+
+table button:hover {
+    background-color: #ea272d;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
 }
 
 table input {
     width: 50%;
     text-align: center;
+}
+
+.increase:hover, .decrease:hover, .remove:hover {
+    color: #333333;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.increase, .decrease {
+    padding-left: 15px;
+}
+
+.amountMain {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.amount {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
 }
 /* CART END */
 
@@ -524,6 +572,15 @@ table input {
     
     .food, .menu {
         margin-bottom: 4px;
+    }
+    
+    .cartFlex {
+        flex-direction: column;
+    }
+
+    .cartList, .cartSummary {
+        width: 100%;
+        margin: 0px;
     }
 }
 
@@ -628,6 +685,7 @@ table input {
         margin-right: auto;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .price {
         display: block;

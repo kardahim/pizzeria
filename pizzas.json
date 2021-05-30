@@ -166,5 +166,119 @@
         "name": "Hawajska",
         "size": "60 cm",
         "price": "58.20"
+    },
+    {
+        "id": "29",
+        "name": "Vege",
+        "size": "20 cm",
+        "price": "11.50"
+    },
+    {
+        "id": "30",
+        "name": "Vege",
+        "size": "27 cm",
+        "price": "17.50"
+    },
+    {
+        "id": "31",
+        "name": "Vege",
+        "size": "40 cm",
+        "price": "30.20"
+    },
+    {
+        "id": "32",
+        "name": "Vege",
+        "size": "60 cm",
+        "price": "59.50"
+    },
+    {
+        "id": "33",
+        "name": "La Bamba",
+        "size": "20 cm",
+        "price": "12.50"
+    },
+    {
+        "id": "34",
+        "name": "La Bamba",
+        "size": "27 cm",
+        "price": "20.90"
+    },
+    {
+        "id": "35",
+        "name": "La Bamba",
+        "size": "40 cm",
+        "price": "36.60"
+    },
+    {
+        "id": "36",
+        "name": "La Bamba",
+        "size": "60 cm",
+        "price": "69.90"
+    },
+    {
+        "id": "37",
+        "name": "Mexicana",
+        "size": "20 cm",
+        "price": "11.00"
+    },
+    {
+        "id": "38",
+        "name": "Mexicana",
+        "size": "27 cm",
+        "price": "17.00"
+    },
+    {
+        "id": "39",
+        "name": "Mexicana",
+        "size": "40 cm",
+        "price": "28.90"
+    },
+    {
+        "id": "40",
+        "name": "Mexicana",
+        "size": "60 cm",
+        "price": "55.80"
+    },
+    {
+        "id": "41",
+        "name": "Coca-Cola",
+        "size": "0.5 l",
+        "price": "7.00"
+    },
+    {
+        "id": "42",
+        "name": "Coca-Cola",
+        "size": "0.85 l",
+        "price": "9.00"
+    },
+    {
+        "id": "43",
+        "name": "Fanta",
+        "size": "0.5 l",
+        "price": "7.00"
+    },
+    {
+        "id": "44",
+        "name": "Sprite",
+        "size": "0.5 l",
+        "price": "7.00"
+    },
+    {
+        "id": "45",
+        "name": "Red Bull",
+        "size": "0.25 l",
+        "price": "9.00"
+    },
+    {
+        "id": "46",
+        "name": "Piwo Żywiec",
+        "size": "0.5 l",
+        "price": "8.50"
+    },
+    {
+        "id": "47",
+        "name": "Radler Warka 0%",
+        "size": "0.5 l",
+        "price": "6.40"
     }
 ]

@@ -49,10 +49,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(1)">20 cm</button>' +
-        '<button name="pizza" onclick="add(2)">27 cm</button>' +
-        '<button name="pizza" onclick="add(3)">40 cm</button>' +
-        '<button name="pizza" onclick="add(4)">60 cm</button>' +
+        '<button onclick="add(1)">20 cm</button>' +
+        '<button onclick="add(2)">27 cm</button>' +
+        '<button onclick="add(3)">40 cm</button>' +
+        '<button onclick="add(4)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -72,10 +72,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(5)">20 cm</button>' +
-        '<button name="pizza" onclick="add(6)">27 cm</button>' +
-        '<button name="pizza" onclick="add(7)">40 cm</button>' +
-        '<button name="pizza" onclick="add(8)">60 cm</button>' +
+        '<button onclick="add(5)">20 cm</button>' +
+        '<button onclick="add(6)">27 cm</button>' +
+        '<button onclick="add(7)">40 cm</button>' +
+        '<button onclick="add(8)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -95,10 +95,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(9)">20 cm</button>' +
-        '<button name="pizza" onclick="add(10)">27 cm</button>' +
-        '<button name="pizza" onclick="add(11)">40 cm</button>' +
-        '<button name="pizza" onclick="add(12)">60 cm</button>' +
+        '<button onclick="add(9)">20 cm</button>' +
+        '<button onclick="add(10)">27 cm</button>' +
+        '<button onclick="add(11)">40 cm</button>' +
+        '<button onclick="add(12)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -118,10 +118,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(13)">20 cm</button>' +
-        '<button name="pizza" onclick="add(14)">27 cm</button>' +
-        '<button name="pizza" onclick="add(15)">40 cm</button>' +
-        '<button name="pizza" onclick="add(16)">60 cm</button>' +
+        '<button onclick="add(13)">20 cm</button>' +
+        '<button onclick="add(14)">27 cm</button>' +
+        '<button onclick="add(15)">40 cm</button>' +
+        '<button onclick="add(16)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -141,10 +141,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(17)">20 cm</button>' +
-        '<button name="pizza" onclick="add(18)">27 cm</button>' +
-        '<button name="pizza" onclick="add(19)">40 cm</button>' +
-        '<button name="pizza" onclick="add(20)">60 cm</button>' +
+        '<button onclick="add(17)">20 cm</button>' +
+        '<button onclick="add(18)">27 cm</button>' +
+        '<button onclick="add(19)">40 cm</button>' +
+        '<button onclick="add(20)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -164,10 +164,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(21)">20 cm</button>' +
-        '<button name="pizza" onclick="add(22)">27 cm</button>' +
-        '<button name="pizza" onclick="add(23)">40 cm</button>' +
-        '<button name="pizza" onclick="add(24)">60 cm</button>' +
+        '<button onclick="add(21)">20 cm</button>' +
+        '<button onclick="add(22)">27 cm</button>' +
+        '<button onclick="add(23)">40 cm</button>' +
+        '<button onclick="add(24)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -187,10 +187,10 @@ function showClassic() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button name="pizza" onclick="add(25)">20 cm</button>' +
-        '<button name="pizza" onclick="add(26)">27 cm</button>' +
-        '<button name="pizza" onclick="add(27)">40 cm</button>' +
-        '<button name="pizza" onclick="add(28)">60 cm</button>' +
+        '<button onclick="add(25)">20 cm</button>' +
+        '<button onclick="add(26)">27 cm</button>' +
+        '<button onclick="add(27)">40 cm</button>' +
+        '<button onclick="add(28)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -232,10 +232,10 @@ function showSpecial() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button>20 cm</button>' +
-        '<button>27 cm</button>' +
-        '<button>40 cm</button>' +
-        '<button>60 cm</button>' +
+        '<button onclick="add(29)">20 cm</button>' +
+        '<button onclick="add(30)">27 cm</button>' +
+        '<button onclick="add(31)">40 cm</button>' +
+        '<button onclick="add(32)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -255,10 +255,10 @@ function showSpecial() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button>20 cm</button>' +
-        '<button>27 cm</button>' +
-        '<button>40 cm</button>' +
-        '<button>60 cm</button>' +
+        '<button onclick="add(33)">20 cm</button>' +
+        '<button onclick="add(34)">27 cm</button>' +
+        '<button onclick="add(35)">40 cm</button>' +
+        '<button onclick="add(36)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -278,10 +278,10 @@ function showSpecial() {
         '<div class="dropButton">' +
         '<button>Do koszyka</button>' +
         '<div>' +
-        '<button>20 cm</button>' +
-        '<button>27 cm</button>' +
-        '<button>40 cm</button>' +
-        '<button>60 cm</button>' +
+        '<button onclick="add(37)">20 cm</button>' +
+        '<button onclick="add(38)">27 cm</button>' +
+        '<button onclick="add(39)">40 cm</button>' +
+        '<button onclick="add(40)">60 cm</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
