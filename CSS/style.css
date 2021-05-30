@@ -675,6 +675,10 @@ table input {
         align-items: center;
     }
     
+    .pizzaNameRow button {
+        width: 250px;
+    }
+    
     .ingredients {
         text-align: center;
     }
@@ -685,7 +689,6 @@ table input {
         margin-right: auto;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
     .price {
         display: block;
