@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    min-width: 320px;
 }
 
 * {
@@ -515,6 +516,56 @@ table input {
 }
 /* CART END */
 
+/* OWN PIZZA START */
+.ownPizza {
+    padding: 15px;
+}
+
+.sizeContent, .ingredientsContent {
+    display: flex;
+}
+
+.sizeContent {
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.ingredientsContent {
+    justify-content: space-between;
+}
+
+.numberContent {
+    width: 20%;
+}
+
+.orderFirstRow {
+    display: flex;
+}
+
+.numberContent input {
+    text-align: center;
+}
+
+.ownSummary span {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ownSummary div div {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.ownBtn {
+    display: flex;
+}
+
+.ownBtn button {
+    width: 100%;
+}
+
+/* OWN PIZZA END */
+
 /* RWD START */
 @media screen and (max-width: 900px){
     /* MENU BAR START */
@@ -547,6 +598,26 @@ table input {
 
     .subtext {
         font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 682px){
+    .ingredientsContent, .orderFirstRow {
+        flex-direction: column;
+    }
+    
+    .sizeContent, .numberContent, .ingredientsContent {
+        width: 100%;
+        margin: 0;
+    }
+
+    .numberContent div {
+        text-align: center;
+    }
+    
+    .numberContent input {
+        width: 250px;
     }
 }
 
@@ -681,6 +752,10 @@ table input {
     
     .ingredients {
         text-align: center;
+    }
+    
+    .sizeContent {
+        align-items: flex-start;
     }
    
     .price button{

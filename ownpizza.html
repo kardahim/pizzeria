@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pizza Lublin, pizza, tania pizza, dobra pizza, pizza z dowozem">
+    <meta name="description" content="Pizza u Romana - Polska sieć gastronomiczna specjalizująca się w pizzy włoskiej">
+    <meta name="author" content="Paweł L Ciszewski">
+    <title>Pizza u Romana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="JS/changeMenu.js"></script>
+    <script src="JS/createPizza.js"></script>
+</head>
+
+<body onchange="switchDisable('ingredients')">
+    <header>
+        <!--LOGO-->
+        <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+        <i class="fas fa-bars hamburger"></i>
+        <!--NAV-->
+        <nav>
+            <ul>
+                <li><a href="index.html">GŁÓWNA</a></li>
+                <li><a href="menu.html" onclick="changeID(2)">MENU</a></li>
+                <li><a href="#">AKTUALNOŚCI</a></li>
+            </ul>
+        </nav>
+        <!--CART-->
+        <div class="cart">
+            <img src="IMG/cart.png" alt="ikona wózka">
+            <a href="cart.html">Koszyk</a>
+        </div>
+    </header>
+    <div class="container">
+        <!--NEWS ICON-->
+        <div class="news">
+            <img src="IMG/nowosci.png" alt="nowosci">
+        </div>
+        <div class="menuOrder ownPizza cartFlex">
+            <div class="cartList">
+                <div class="orderFirstRow">
+                    <fieldset class="sizeContent" id="size">
+                        <legend id="sizeLegend">Rozmiar</legend>
+                        <div>
+                            <input type="radio" name="pizzaSize" id="s1">
+                            <label for="s1">20 cm</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pizzaSize" id="s2">
+                            <label for="s2">27 cm</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pizzaSize" id="s3">
+                            <label for="s3">40 cm</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pizzaSize" id="s4">
+                            <label for="s4">60 cm</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="numberContent" id="number">
+                        <legend id="numberLegend">Ilość</legend>
+                        <div>
+                            <input type="number" id="numberOwn" min="1" value="1" step="1">
+                        </div>
+                    </fieldset>
+                </div>
+                <fieldset class=" ingredientsContent" id="ingre">
+                    <legend id="ingreLegend">Składniki</legend>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i1">
+                            <label for="i1">Ser</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i2">
+                            <label for="i2">Salami</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i3">
+                            <label for="i3">Szynka</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i4">
+                            <label for="i4">Kurczak</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i5">
+                            <label for="i5">Kukurydza</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i6">
+                            <label for="i6">Groszek</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i7">
+                            <label for="i7">Ananas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i8">
+                            <label for="i8">Cebula</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i9">
+                            <label for="i9">Oliwki Czarne</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i10">
+                            <label for="i10">Rukola</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i11">
+                            <label for="i11">Pomidor</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i12">
+                            <label for="i12">Boczek</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i13">
+                            <label for="i13">Jalapeno</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i14">
+                            <label for="i14">Papryka</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i15">
+                            <label for="i15">Pieczarki</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i16">
+                            <label for="i16">Mozzarella</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i17">
+                            <label for="i17">Pepperoni</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i18">
+                            <label for="i18">Krewetki koktajlowe</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i19">
+                            <label for="i19">Tuńczyk</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ingredients" id="i20">
+                            <label for="i20">Ogórek</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset class="cartSummary ownSummary">
+                <legend>Twoja Pizza</legend>
+                <div>
+                    <div>
+                        <span>cena:</span>
+                        <span id="displayPrice"></span>
+                    </div>
+                    <div>
+                        <span>Składniki:</span>
+                        <span id="displayIngredients"></span>
+                    </div>
+                    <div class="ownBtn">
+                        <button onclick="returnMenu()">Powrót</button>
+                        <button onclick="check()">Stwórz</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <!--LOGO-->
+        <div class="flink-container">
+            <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+            <div class="flink">
+                <a href="#">O NAS</a>
+                <a href="#">KONTAKT</a>
+                <a href="#">ZESPÓŁ</a>
+            </div>
+            <div class="media">
+                <a href="#" class="m1">
+                    <img src="IMG/facebook.png" alt="facebook">
+                </a>
+                <a href="#" class="m2">
+                    <img src="IMG/twitter.png" alt="twitter">
+                </a>
+                <a href="#" class="m3">
+                    <img src="IMG/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="copy">Copyright 2021 P.Ciszewski</div>
+    </footer>
+</body>
+
+</html>

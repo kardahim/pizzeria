@@ -31,7 +31,7 @@ function showClassic() {
         '<span>27 cm&nbsp;&nbsp;</span>' +
         '<span>40 cm&nbsp;&nbsp;</span>' +
         '<span>60 cm&nbsp;&nbsp;</span>' +
-        '<button>Stwórz</button>' +
+        '<button onclick="ownPizza()">Stwórz</button>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -214,7 +214,7 @@ function showSpecial() {
         '<span>27 cm&nbsp;&nbsp;</span>' +
         '<span>40 cm&nbsp;&nbsp;</span>' +
         '<span>60 cm&nbsp;&nbsp;</span>' +
-        '<button>Stwórz</button>' +
+        '<button onclick="ownPizza()">Stwórz</button>' +
         '</div>' +
         '</div>' +
         '<div class="ingredients">' +
@@ -292,4 +292,8 @@ function showSpecial() {
         '</div>';
 
     return text;
+}
+
+function ownPizza() {
+    location.href = "ownpizza.html";
 }
