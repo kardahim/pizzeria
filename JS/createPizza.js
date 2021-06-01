@@ -98,7 +98,6 @@ function switchDisable(name) {
         var checked = checkBox[i].checked;
         if (checked) {
             checkAmount++;
-            console.log(checkAmount);
         }
 
         if (checkAmount == 5)
@@ -112,4 +111,67 @@ function returnMenu() {
     if (window.confirm("Czy chcesz powrócić do menu? Twoja pizza nie zostanie dodana do koszyka!")) {
         location.href = "menu.html";
     }
+}
+
+function display() {
+    var radio = document.getElementsByName("pizzaSize");
+    var number = document.getElementById("numberOwn").value;
+    var checkBox = document.getElementsByName("ingredients");
+    var size = "";
+    var ingredients = "";
+    var ingredientsAmount = 0;
+    var sizeChecked = -1;
+    var price = 0;
+    var priceBase = 6;
+    var priceMultiplier;
+    var ok = true;
+
+    for (var i = 0; i < radio.length; i++) {
+        var checked = radio[i].checked;
+        if (checked) {
+            sizeChecked = i;
+            size += radio[i].value;
+            break;
+        }
+    }
+
+    for (var i = 0; i < checkBox.length; i++) {
+        var checked = checkBox[i].checked;
+        if (checked) {
+            ingredientsAmount++;
+            ingredients += checkBox[i].value + ", ";
+        }
+        if (ingredientsAmount == 5)
+            break;
+    }
+    ingredients = ingredients.slice(0, -2);
+
+    switch (sizeChecked) {
+        case 0: priceMultiplier = 2 / 5; break;
+        case 1: priceMultiplier = 2 / 3; break;
+        case 2: priceMultiplier = 1; break;
+        case 3: priceMultiplier = 2; break;
+    }
+    price = priceBase * priceMultiplier * ingredientsAmount;
+    price = Math.round(price * 100) / 100;
+
+    document.getElementById("displaySize").innerHTML = size;
+    document.getElementById("displayIngredients").innerHTML = ingredients;
+    if (number > 0 && number % 1 === 0)
+        document.getElementById("displayAmount").innerHTML = number;
+    else {
+        document.getElementById("displayAmount").innerHTML = "";
+        ok = false;
+    }
+    if (sizeChecked == -1 || ingredientsAmount == 0) {
+        document.getElementById("displayPrice").innerHTML = "";
+        ok = false
+    }
+    else
+        document.getElementById("displayPrice").innerHTML = price + " zł";
+    if (ok)
+        document.getElementById("displayTotal").innerHTML = (price * number) + " zł";
+    else
+        document.getElementById("displayTotal").innerHTML = "";
+
 }

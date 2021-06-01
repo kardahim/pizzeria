@@ -15,7 +15,7 @@
     <script src="JS/createPizza.js"></script>
 </head>
 
-<body onchange="switchDisable('ingredients')">
+<body onchange="switchDisable('ingredients'), display()">
     <header>
         <!--LOGO-->
         <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
@@ -45,19 +45,19 @@
                     <fieldset class="sizeContent" id="size">
                         <legend id="sizeLegend">Rozmiar</legend>
                         <div>
-                            <input type="radio" name="pizzaSize" id="s1">
+                            <input type="radio" name="pizzaSize" id="s1" value="20 cm">
                             <label for="s1">20 cm</label>
                         </div>
                         <div>
-                            <input type="radio" name="pizzaSize" id="s2">
+                            <input type="radio" name="pizzaSize" id="s2" value="27 cm">
                             <label for="s2">27 cm</label>
                         </div>
                         <div>
-                            <input type="radio" name="pizzaSize" id="s3">
+                            <input type="radio" name="pizzaSize" id="s3" value="40 cm">
                             <label for="s3">40 cm</label>
                         </div>
                         <div>
-                            <input type="radio" name="pizzaSize" id="s4">
+                            <input type="radio" name="pizzaSize" id="s4" value="60 cm">
                             <label for="s4">60 cm</label>
                         </div>
                     </fieldset>
@@ -72,89 +72,89 @@
                     <legend id="ingreLegend">Składniki</legend>
                     <div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i1">
+                            <input type="checkbox" name="ingredients" id="i1" value="Ser">
                             <label for="i1">Ser</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i2">
+                            <input type="checkbox" name="ingredients" id="i2" value="Salami">
                             <label for="i2">Salami</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i3">
+                            <input type="checkbox" name="ingredients" id="i3" value="Szynka">
                             <label for="i3">Szynka</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i4">
+                            <input type="checkbox" name="ingredients" id="i4" value="Kurczak">
                             <label for="i4">Kurczak</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i5">
+                            <input type="checkbox" name="ingredients" id="i5" value="Kukurydza">
                             <label for="i5">Kukurydza</label>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i6">
+                            <input type="checkbox" name="ingredients" id="i6" value="Groszek">
                             <label for="i6">Groszek</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i7">
+                            <input type="checkbox" name="ingredients" id="i7" value="Ananas">
                             <label for="i7">Ananas</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i8">
+                            <input type="checkbox" name="ingredients" id="i8" value="Cebula">
                             <label for="i8">Cebula</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i9">
-                            <label for="i9">Oliwki Czarne</label>
+                            <input type="checkbox" name="ingredients" id="i9" value="Oliwki czarne">
+                            <label for="i9">Oliwki czarne</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i10">
+                            <input type="checkbox" name="ingredients" id="i10" value="Rukola">
                             <label for="i10">Rukola</label>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i11">
+                            <input type="checkbox" name="ingredients" id="i11" value="Pomidor">
                             <label for="i11">Pomidor</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i12">
+                            <input type="checkbox" name="ingredients" id="i12" value="Boczek">
                             <label for="i12">Boczek</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i13">
+                            <input type="checkbox" name="ingredients" id="i13" value="Jalapeno">
                             <label for="i13">Jalapeno</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i14">
+                            <input type="checkbox" name="ingredients" id="i14" value="Papryka">
                             <label for="i14">Papryka</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i15">
+                            <input type="checkbox" name="ingredients" id="i15" value="Pieczarki">
                             <label for="i15">Pieczarki</label>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i16">
+                            <input type="checkbox" name="ingredients" id="i16" value="Mozzarella">
                             <label for="i16">Mozzarella</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i17">
+                            <input type="checkbox" name="ingredients" id="i17" value="Pepperoni">
                             <label for="i17">Pepperoni</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i18">
+                            <input type="checkbox" name="ingredients" id="i18" value="Krewetki koktajlowe">
                             <label for="i18">Krewetki koktajlowe</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i19">
+                            <input type="checkbox" name="ingredients" id="i19" value="Tuńczyk">
                             <label for="i19">Tuńczyk</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="ingredients" id="i20">
+                            <input type="checkbox" name="ingredients" id="i20" value="Ogórek">
                             <label for="i20">Ogórek</label>
                         </div>
                     </div>
@@ -164,12 +164,24 @@
                 <legend>Twoja Pizza</legend>
                 <div>
                     <div>
-                        <span>cena:</span>
+                        <span>Rozmiar:</span>
+                        <span id="displaySize"></span>
+                    </div>
+                    <div>
+                        <span>Ilość:</span>
+                        <span id="displayAmount">1</span>
+                    </div>
+                    <div>
+                        <span>Cena:</span>
                         <span id="displayPrice"></span>
                     </div>
                     <div>
                         <span>Składniki:</span>
                         <span id="displayIngredients"></span>
+                    </div>
+                    <div>
+                        <span>Razem:</span>
+                        <span id="displayTotal"></span>
                     </div>
                     <div class="ownBtn">
                         <button onclick="returnMenu()">Powrót</button>
