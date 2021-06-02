@@ -30,6 +30,9 @@ function check() {
         document.getElementById('number').style.borderColor = "white";
         document.getElementById('numberLegend').style.color = "white";
     }
+
+    if (ok)
+        create();
 }
 
 function checkRadio(name) {
@@ -170,8 +173,40 @@ function display() {
     else
         document.getElementById("displayPrice").innerHTML = price + " zł";
     if (ok)
-        document.getElementById("displayTotal").innerHTML = (price * number) + " zł";
+        document.getElementById("displayTotal").innerHTML = Math.round((price * number) * 100) / 100 + " zł";
     else
         document.getElementById("displayTotal").innerHTML = "";
 
+}
+
+function create() {
+    var cart = JSON.parse(localStorage.getItem("cart"));
+    var item = {};
+    var price = document.getElementById("displayPrice").innerText;
+    if (cart === null) {
+        cart = [];
+    }
+
+    item.name = "Własna";
+    item.size = document.getElementById("displaySize").innerText;
+    item.price = price.slice(0, -3);
+    item.amount = document.getElementById("displayAmount").innerText;
+    item.ingredients = document.getElementById("displayIngredients").innerText;
+
+    for (var j = 0; j < cart.length; j++) {
+        if (cart[j].size == item.size && cart[j].ingredients == item.ingredients) {
+            item.amount = parseInt(cart[j].amount) + parseInt(item.amount);
+        }
+    }
+    if ((item.amount == 1) || cart.length == 0)
+        cart.push(item);
+    else {
+        for (var j = 0; j < cart.length; j++) {
+            if (cart[j].size == item.size && cart[j].ingredients == item.ingredients) {
+                cart[j].amount = item.amount;
+            }
+        }
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
 }
