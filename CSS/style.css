@@ -283,6 +283,11 @@ footer {
     flex-direction: column;
 }
 
+.flink a:hover {
+    text-decoration: underline;
+}
+
+
 .flink-container {
     align-items: center;
     display: flex;
