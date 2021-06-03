@@ -622,6 +622,23 @@ table input {
 }
 /* PAYMENT END */
 
+/* NEWS START*/
+.inspirations {
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspirations a {
+    color: white;
+}
+
+.inspirations a:hover {
+    color: #cccccc;
+}
+/* NEWS END */
+
 @media screen and (max-width: 768px) and (min-width: 669px){
     .text, .search p, .span {
         font-size: 25px;
