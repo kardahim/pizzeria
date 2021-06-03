@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pizza Lublin, pizza, tania pizza, dobra pizza, pizza z dowozem">
+    <meta name="description" content="Pizza u Romana - Polska sieć gastronomiczna specjalizująca się w pizzy włoskiej">
+    <meta name="author" content="Paweł L Ciszewski">
+    <title>Pizza u Romana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="JS/changeMenu.js"></script>
+    <script src="JS/payment.js"></script>
+</head>
+
+<body onload="basic()" onchange="checkRadio()">
+    <header>
+        <!--LOGO-->
+        <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+        <i class="fas fa-bars hamburger"></i>
+        <!--NAV-->
+        <nav>
+            <ul>
+                <li><a href="index.html">GŁÓWNA</a></li>
+                <li><a href="menu.html" onclick="changeID(2)">MENU</a></li>
+                <li><a href="#">AKTUALNOŚCI</a></li>
+            </ul>
+        </nav>
+        <!--CART-->
+        <div class="cart">
+            <img src="IMG/cart.png" alt="ikona wózka">
+            <a href="cart.html">Koszyk</a>
+        </div>
+    </header>
+    <div class="container">
+        <!--NEWS ICON-->
+        <div class="news">
+            <img src="IMG/nowosci.png" alt="nowosci">
+        </div>
+        <div class="menuOrder ownPizza" id="paymentForm">
+            <form action="#" method="get" onsubmit="check(); return false">
+                <fieldset>
+                    <legend>Metody płatności</legend>
+                    <div>
+                        <input type="radio" name="paymentMethod" id="p1">
+                        <label for="p1">Karta płatnicza (Visa)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="paymentMethod" id="p2">
+                        <label for="p2">Płatność przy odbiorze (do 100 zł)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dane dostawy</legend>
+                    <div class="deliveryContent">
+                        <input type="text" id="per1" placeholder="Imię (Jan)" name="fname">
+                        <input type="text" id="per2" placeholder="Nazwisko (Cis)" name="lname">
+                    </div>
+                    <div class="deliveryContent">
+                        <select name="city" id="per3">
+                            <option value="Lublin">Lublin</option>
+                            <option value="Łęczna">Łęczna</option>
+                            <option value="Lubartów">Lubartów</option>
+                        </select>
+                        <input type="text" id="per4" placeholder="Ulica (3 Maja)" name="street">
+                    </div>
+                    <div class="deliveryContent" style="margin-bottom: 0px;">
+                        <input type="tel" id="per5" placeholder="Tel (123-123-123)" name="tel">
+                        <input type="text" id="per6" placeholder="Numer domu (12B)" name="houseN">
+                    </div>
+                </fieldset>
+                <fieldset id="cardField">
+                    <legend>Dane karty</legend>
+                    <div class="deliveryContent card" style="margin-bottom: 0px;">
+                        <input type="text" id="card1" placeholder="Numer karty (4xxxxxxxxxxxxxxx)" name="cardN">
+                        <div class="deliveryContent" style="margin-bottom: 0px;">
+                            <div>
+                                <input type="text" id="card2" placeholder="MM (01)" name="mEx">
+                            </div>
+                            <div>
+                                <input type="text" id="card3" placeholder="RR (25)" name="yEx">
+                            </div>
+                            <div>
+                                <input type="text" id="card4" placeholder="CVC (123)" name="cvc">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="deliverySubmit">
+                    <input type="submit" value="" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <!--LOGO-->
+        <div class="flink-container">
+            <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+            <div class="flink">
+                <a href="#">O NAS</a>
+                <a href="#">KONTAKT</a>
+                <a href="#">ZESPÓŁ</a>
+            </div>
+            <div class="media">
+                <a href="#" class="m1">
+                    <img src="IMG/facebook.png" alt="facebook">
+                </a>
+                <a href="#" class="m2">
+                    <img src="IMG/twitter.png" alt="twitter">
+                </a>
+                <a href="#" class="m3">
+                    <img src="IMG/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="copy">Copyright 2021 P.Ciszewski</div>
+    </footer>
+</body>
+
+</html>

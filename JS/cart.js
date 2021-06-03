@@ -82,9 +82,15 @@ function showAll() {
             total = Math.round(total * 100) / 100;
             totalS = total + totalS;
             amountS = parseInt(cart[i].amount) + amountS;
+            var name;
+            if (cart[i].name == "Własna")
+                name = cart[i].name + ` (${cart[i].ingredients})`;
+            else
+                name = cart[i].name
+
             text +=
                 "<tr>" +
-                `<td>${cart[i].name}</td>` +
+                `<td>${name}</td>` +
                 `<td>${cart[i].size}</td>` +
                 `<td>${cart[i].price} zł</td>` +
                 `<td><span class="increase" onclick="amountIncrease(this.id)" id="${i}">+</span><div class="amountMain"><i class="amount">${cart[i].amount}</i><i class="fa fa-trash remove" id="${i}" onclick="remove(this.id)"></i></div><span class="decrease" onclick="amountDecrease(this.id)" id="${i + cart.length}">-</span></td>` +
@@ -110,7 +116,7 @@ function showAll() {
             '<tr>' +
             '<td colspan="2" id="buttonsRow">' +
             '<button onclick="removeAll()">Wyczyść koszyk</button>' +
-            '<button>Zapłać</button>' +
+            '<button onclick="goToPayment()">Zapłać</button>' +
             '</td>' +
             '</tr>' +
             '</tbody>' +
@@ -118,6 +124,7 @@ function showAll() {
     }
     document.getElementById("storage").innerHTML = text;
     document.getElementById("summary").innerHTML = textS;
+    sessionStorage.setItem("totalPrice", totalS);
 }
 
 function removeAll() {
@@ -154,5 +161,11 @@ function remove(id) {
             localStorage.setItem("cart", JSON.stringify(cart));
         }
         showAll();
+    }
+}
+
+function goToPayment() {
+    if (window.confirm("Chcesz przejść do płatności?")) {
+        location.href = "payment.html";
     }
 }
