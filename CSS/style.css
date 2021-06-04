@@ -437,6 +437,18 @@ footer {
     font-size: 12px;
 }
 
+.confirmed {
+    width: 100%;
+    text-align: center;
+    color: #F9A609;
+    font-weight: bold;
+    z-index: 1;
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.20);
+    font-size: 20px;
+}
+
 table {
     width: 100%;
     text-align: center;

@@ -208,5 +208,17 @@ function create() {
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    location.reload();
+
+
+    var confirm = document.getElementById("confirm");
+
+    if (window.pageYOffset >= 60) {
+        confirm.style.top = "0px";
+    }
+    else {
+        confirm.style.top = "60px";
+    }
+    confirm.style.display = "block";
+
+    setTimeout(function () { confirm.style.display = "none" }, 1000);
 }

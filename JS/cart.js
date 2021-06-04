@@ -38,6 +38,17 @@ function add(id) {
             }
         }
     });
+    var confirm = document.getElementById("confirm");
+
+    if (window.pageYOffset >= 60) {
+        confirm.style.top = "0px";
+    }
+    else {
+        confirm.style.top = "60px";
+    }
+    confirm.style.display = "block";
+
+    setTimeout(function () { confirm.style.display = "none" }, 1000);
 }
 
 function showAll() {
