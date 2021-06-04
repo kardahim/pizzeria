@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pizza Lublin, pizza, tania pizza, dobra pizza, pizza z dowozem">
+    <meta name="description" content="Pizza u Romana - Polska sieć gastronomiczna specjalizująca się w pizzy włoskiej">
+    <meta name="author" content="Paweł L Ciszewski">
+    <title>Pizza u Romana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="JS/map.js"></script>
+</head>
+
+<body onload="display()">
+    <header>
+        <!--LOGO-->
+        <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+        <i class="fas fa-bars hamburger"></i>
+        <!--NAV-->
+        <nav>
+            <ul>
+                <li><a href="index.html">GŁÓWNA</a></li>
+                <li><a href="menu.html" onclick="changeID(2)">MENU</a></li>
+                <li><a href="news.html">AKTUALNOŚCI</a></li>
+            </ul>
+        </nav>
+        <!--CART-->
+        <div class="cart">
+            <img src="IMG/cart.png" alt="ikona wózka">
+            <a href="cart.html">Koszyk</a>
+        </div>
+    </header>
+    <div class="container">
+        <!--NEWS ICON-->
+        <div class="news">
+            <img src="IMG/nowosci.png" alt="nowosci">
+        </div>
+        <div class="menuOrder">
+            <div class="inspirations">
+                <h3 id="restaurantName" style="text-align: center;">Nazwa Restauracji</h3>
+                <div style="display: flex;">
+                    <div id="desc" style="width: 100%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                        laboriosam, omnis porro aperiam
+                        quam laborum sapiente ipsa mollitia architecto autem sit alias eaque quasi excepturi magnam
+                        ipsum eum, incidunt corrupti.
+                    </div>
+                    <div id="map" style="width: 100%; height: 350px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <!--LOGO-->
+        <div class="flink-container">
+            <div class="logo"><img src="IMG/logo.png" alt="logo"></div>
+            <div class="flink">
+                <a href="about.html">O NAS</a>
+                <a href="contact.html">KONTAKT</a>
+                <a href="team.html">ZESPÓŁ</a>
+            </div>
+            <div class="media">
+                <a href="#" class="m1">
+                    <img src="IMG/facebook.png" alt="facebook">
+                </a>
+                <a href="#" class="m2">
+                    <img src="IMG/twitter.png" alt="twitter">
+                </a>
+                <a href="#" class="m3">
+                    <img src="IMG/youtube.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="copy">Copyright 2021 P.Ciszewski</div>
+    </footer>
+</body>
+
+</html>

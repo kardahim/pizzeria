@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="JS/changeMenu.js"></script>
+    <script src="JS/search.js"></script>
 </head>
 
 <body>
@@ -57,11 +58,11 @@
             <div class="find">
                 <!--SEARCH-->
                 <div class="search">
-                    <p>ZNAJDŹ</p>
+                    <p>ZNAJDŹ NAS</p>
                     <div class="search-input">
                         <img src="IMG/find.png" alt="szukaj">
-                        <input type="search" placeholder="Szukaj">
-                        <button>Szukaj</button>
+                        <input type="search" placeholder="miasto" id="searchCity">
+                        <button onclick="search()">Szukaj</button>
                     </div>
                 </div>
                 <!--ORDER-->
