@@ -192,23 +192,24 @@ function create() {
     item.price = price.slice(0, -3);
     item.amount = document.getElementById("displayAmount").innerText;
     item.ingredients = document.getElementById("displayIngredients").innerText;
+    var ok = true;
 
-    for (var j = 0; j < cart.length; j++) {
-        if (cart[j].size == item.size && cart[j].ingredients == item.ingredients) {
-            item.amount = parseInt(cart[j].amount) + parseInt(item.amount);
-        }
-    }
-    if ((item.amount == 1) || cart.length == 0)
+    if (cart.length == 0) {
         cart.push(item);
+    }
     else {
-        for (var j = 0; j < cart.length; j++) {
-            if (cart[j].size == item.size && cart[j].ingredients == item.ingredients) {
-                cart[j].amount = item.amount;
+        for (var i = 0; i < cart.length; i++) {
+            if (cart[i].size == item.size && cart[i].ingredients == item.ingredients) {
+                cart[i].amount = parseInt(cart[i].amount) + parseInt(item.amount);
+                ok = false;
             }
+        }
+
+        if (ok) {
+            cart.push(item);
         }
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-
 
     var confirm = document.getElementById("confirm");
 
