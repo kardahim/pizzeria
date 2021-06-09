@@ -1,0 +1,85 @@
+<h1>Menu sezonowe</h1>
+<div class="menuRow">
+<div class="pizzaNameRow">
+<span>WŁASNA</span>
+<div class="price">
+<span>20 cm&nbsp;&nbsp;</span>
+<span>27 cm&nbsp;&nbsp;</span>
+<span>40 cm&nbsp;&nbsp;</span>
+<span>60 cm&nbsp;&nbsp;</span>
+<button onclick="ownPizza()">Stwórz</button>
+</div>
+</div>
+<div class="ingredients">
+<span>Do 5 składników</span>
+</div>
+</div >
+<div class="menuRow">
+<div class="pizzaNameRow">
+<span>1.VEGE&#127807;</span>
+<div class="price">
+<span>11,50 zł</span>
+<span>17,50 zł</span>
+<span>30,20 zł</span>
+<span>59,50 zł</span>
+<div class="dropButton">
+<button>Do koszyka</button>
+<div>
+<button onclick="add(29)">20 cm</button>
+<button onclick="add(30)">27 cm</button>
+<button onclick="add(31)">40 cm</button>
+<button onclick="add(32)">60 cm</button>
+</div>
+</div>
+</div>
+</div>
+<div class="ingredients">
+<span>Szpinak, Czosnek, Mozzarella, Lazur</span>
+</div>
+</div>
+<div class="menuRow">
+<div class="pizzaNameRow">
+<span>2. La BAMBA</span>
+<div class="price">
+<span>12,50 zł</span>
+<span>20,90 zł</span>
+<span>36,60 zł</span>
+<span>69,90 zł</span>
+<div class="dropButton">
+<button>Do koszyka</button>
+<div>
+<button onclick="add(33)">20 cm</button>
+<button onclick="add(34)">27 cm</button>
+<button onclick="add(35)">40 cm</button>
+<button onclick="add(36)">60 cm</button>
+</div>
+</div>
+</div>
+</div>
+<div class="ingredients">
+<span>Krewetko koktajlowe, Ser, Czosnek, Szynka</span>
+</div>
+</div>
+<div class="menuRow">
+<div class="pizzaNameRow">
+<span>4.MEXICANA&#128293;</span>
+<div class="price">
+<span>11,00 zł</span>
+<span>17,00 zł</span>
+<span>28,90 zł</span>
+<span>55,80 zł</span>
+<div class="dropButton">
+<button>Do koszyka</button>
+<div>
+<button onclick="add(37)">20 cm</button>
+<button onclick="add(38)">27 cm</button>
+<button onclick="add(39)">40 cm</button>
+<button onclick="add(40)">60 cm</button>
+</div>
+</div>
+</div>
+</div>
+<div class="ingredients">
+<span>Chili, Ser, Mięso, Peperoni</span>
+</div>
+</div>
