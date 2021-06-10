@@ -1,12 +1,12 @@
 async function loadClassic() {
-    const response = await fetch("menuClassic.txt");
+    const response = await fetch("data/menuClassic.txt");
     const data = await response.text();
     return data;
 }
 
 
 async function loadSpecial() {
-    const response = await fetch("menuSpecial.txt");
+    const response = await fetch("data/menuSpecial.txt");
     const data = await response.text();
     return data;
 }

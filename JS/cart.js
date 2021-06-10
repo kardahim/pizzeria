@@ -1,5 +1,5 @@
 async function loadJson() {
-    const response = await fetch("pizzas.json");
+    const response = await fetch("data/pizzas.json");
     const data = await response.json();
     return data;
 }
